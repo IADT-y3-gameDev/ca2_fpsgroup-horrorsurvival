@@ -4,3 +4,5 @@
 * You should also be able to host your game inside the folder "docs" and the startpage has to be called "index.html".
 
 Aaron S
+
+Clone Repository by Patrick
