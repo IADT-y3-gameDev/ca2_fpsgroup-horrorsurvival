@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class Teleportation : MonoBehaviour
 {
-    public void fieldScene()
+    public Transform TeleEnd;
+    public GameObject thePlayer;
+
+    void OnTriggerEnter(Collider Other)
     {
-       //SceneManager.loadScene('FieldScene'); 
+       thePlayer.transform.position = TeleEnd.transform.position; 
     }
 }
