@@ -15,18 +15,14 @@ public class MoveToPosition : MonoBehaviour
     private ContactPoint contact;
     private float timer;
 
-
     // Start is called before the first frame update
     void Start()
-    
-    
     {
         //we cannot attach GameObject Player in Inspector when spawning
         //so we use code instead.
         goal = GameObject.FindGameObjectWithTag("Player").transform;
-        agent = GetComponent<NavMeshAgent>();  
+        agent = GetComponent<NavMeshAgent>();
         timer = knockbackTime;  
-        
     }
 
     void Update() {
@@ -49,12 +45,8 @@ public class MoveToPosition : MonoBehaviour
                 gameObject.GetComponent<NavMeshAgent>().isStopped = false;
                 //restart seeking behaviour
                 agent.SetDestination(goal.position);
-            
-
             }
         }
-
-       
     }
 
     void OnCollisionEnter(Collision other) {
@@ -64,6 +56,4 @@ public class MoveToPosition : MonoBehaviour
             hit = true; 
         }
     }
-
-
 }
