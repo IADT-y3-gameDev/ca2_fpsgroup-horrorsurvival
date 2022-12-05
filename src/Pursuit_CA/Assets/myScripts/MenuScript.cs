@@ -8,14 +8,13 @@ public class MenuScript : MonoBehaviour
     // StartGame is a script for the Start button
     public void StartGame()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     // ExitGame is is a script for the Exit button
     public void ExitGame()
     {
+        Debug.Log("QUIT!");
         Application.Quit();
     }
-
-
 }

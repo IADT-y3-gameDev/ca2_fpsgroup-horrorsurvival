@@ -94,7 +94,7 @@ public class GameManager : MonoBehaviour
             {   
                 //Game Over Message.
                 panel.SetActive(true);
-                panelText.text = string.Format("Game Over! Survived {0} Rounds", roundsSurvived);
+                panelText.text = string.Format("Game Over! Restart Game", roundsSurvived);
                 Time.timeScale = 0;
             }
         }

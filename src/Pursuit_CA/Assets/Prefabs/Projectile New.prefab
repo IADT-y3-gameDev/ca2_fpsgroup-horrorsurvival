@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2372990172920214037}
   - component: {fileID: 4160665399817648176}
   - component: {fileID: 3329980503754624137}
-  - component: {fileID: 6910844062095048964}
+  - component: {fileID: 3086740463652214540}
   m_Layer: 7
   m_Name: Bullet
   m_TagString: bullet
@@ -114,7 +114,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &6910844062095048964
+--- !u!114 &3086740463652214540
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -123,10 +123,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 262376715884552765}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b05460ea14013340895391f8bf7b59e, type: 3}
+  m_Script: {fileID: 11500000, guid: a330b0fe2057e7340a4d1e6219c37c0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particle: {fileID: 2541436783099913444, guid: 87363df04011fbf429f3c12cc4ea5db3, type: 3}
+  particle: {fileID: 6570470236078234870, guid: 04a5e9862ca07794497a2368bf47b53a, type: 3}
 --- !u!1 &3924772713554240205
 GameObject:
   m_ObjectHideFlags: 0
@@ -136,7 +136,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7368108001038926181}
-  - component: {fileID: 7658231422428643887}
+  - component: {fileID: 1235801153697493976}
   m_Layer: 7
   m_Name: Projectile New
   m_TagString: Untagged
@@ -159,7 +159,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7658231422428643887
+--- !u!114 &1235801153697493976
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -168,7 +168,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3924772713554240205}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6883cc8df8d6d7649af76dcf73e7bad9, type: 3}
+  m_Script: {fileID: 11500000, guid: b86ff76247450b74ebd5e16848af39ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 10
