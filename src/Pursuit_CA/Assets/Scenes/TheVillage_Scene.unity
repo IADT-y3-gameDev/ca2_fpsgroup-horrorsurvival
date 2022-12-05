@@ -461,6 +461,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VillageTerrainWoods
       objectReference: {fileID: 0}
+    - target: {fileID: 7754244717957051069, guid: cdd0545fda7206e4abba646573f5c6fd, type: 3}
+      propertyPath: m_TerrainData
+      value: 
+      objectReference: {fileID: 15600000, guid: 4034e7e2147f327418c2d3ccb60f8457, type: 2}
     - target: {fileID: 7754244717957051071, guid: cdd0545fda7206e4abba646573f5c6fd, type: 3}
       propertyPath: m_RootOrder
       value: 5
