@@ -1,4 +1,5 @@
 ﻿
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -70,12 +71,12 @@ public class GameManager : MonoBehaviour
             {
                 roundsSurvived++;
                 Debug.Log(roundsSurvived);
-                panelText.text = string.Format("Round {0} Completed! Press Right mouse button for next wave!", roundsSurvived);
+                panelText.text = string.Format("Survived Round! You survived from a herd of zombies", roundsSurvived);
                 panel.SetActive(true);
             }
 
             //going to the next round
-            if (roundsSurvived != currentRound && Input.GetButton("Fire2"))
+            if (roundsSurvived != currentRound && Input.GetKeyDown(KeyCode.Tab))
             {
                 currentRound = roundsSurvived;
                 RoundComplete();
@@ -85,16 +86,16 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            if (Input.GetButton("Fire2"))
+            if (Input.GetKeyDown(KeyCode.Tab))
             {
                 Scene current = SceneManager.GetActiveScene();
-                SceneManager.LoadScene(current.name);
+                SceneManager.LoadScene(1);
             }
             else
             {   
                 //Game Over Message.
                 panel.SetActive(true);
-                panelText.text = string.Format("Game Over! Restart Game", roundsSurvived);
+                panelText.text = string.Format("Game Over!", roundsSurvived);
                 Time.timeScale = 0;
             }
         }
