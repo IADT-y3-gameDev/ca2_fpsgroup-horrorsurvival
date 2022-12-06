@@ -4,9 +4,11 @@ public class EnemyDamage : MonoBehaviour
 {
     //Private means only this script can access the variable.
     private int hitNumber;
+    private int hitShell;
 
-    private void  OnEnable() {
+    private void OnEnable() {
         hitNumber = 0;
+        hitShell = 2;
     }
 
     //Unity stores the collider it hits and we can access it via the name other.
@@ -22,6 +24,14 @@ public class EnemyDamage : MonoBehaviour
             hitNumber++;
             //Debug.Log(hitNumber);
         }
+
+        if (other.collider.transform.CompareTag("shell"))
+        {
+            //If the comparison is true, we increase the hit number.
+            hitNumber++;
+            //Debug.Log(hitNumber);
+        }
+
         //if the hit number is equal to 3 we destroy this object.
         if (hitNumber == 3)
         {

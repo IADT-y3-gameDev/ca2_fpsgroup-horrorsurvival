@@ -62,7 +62,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1393259357486685424, guid: ae9b54c61b55bdf4b9fdc45645dbef4b, type: 3}
       propertyPath: m_TagString
-      value: bullet
+      value: shell
       objectReference: {fileID: 0}
     - target: {fileID: 1737838241677821514, guid: ae9b54c61b55bdf4b9fdc45645dbef4b, type: 3}
       propertyPath: m_RootOrder

@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - bullet
+  - animation
+  - Revolver
+  - MachineGun
+  - Shotgun
+  - shell
   layers:
   - Default
   - TransparentFX
@@ -14,9 +19,9 @@ TagManager:
   - UI
   - Player
   - Projectile
-  - 
-  - 
-  - 
+  - Revolver
+  - Shotgun
+  - MachineGun
   - 
   - 
   - 

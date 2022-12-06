@@ -8,7 +8,6 @@ public class AnimationStateController : MonoBehaviour
     int isWalkingHash;
     int isDeadHash;
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +25,7 @@ public class AnimationStateController : MonoBehaviour
         bool isDead = animator.GetBool(isDeadHash);
 
         bool forwardPressed = Input.GetKey("w");
-        bool deadPressed = Input.GetKey("d");
+        bool deadPressed = Input.GetKey("k");
         
         //w key pressed AND isWalking is false
         if (!isWalking && forwardPressed) {
