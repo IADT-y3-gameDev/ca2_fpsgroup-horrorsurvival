@@ -1,6 +1,6 @@
-﻿using UnityEngine;
+using UnityEngine;
 
-public class EnemyDamage : MonoBehaviour
+public class BossDamage : MonoBehaviour
 {
     //Private means only this script can access the variable.
     private int hitNumber;
@@ -33,7 +33,7 @@ public class EnemyDamage : MonoBehaviour
         }
 
         //if the hit number is equal to 3 we destroy this object.
-        if (hitNumber == 3)
+        if (hitNumber == 30)
         {
             gameObject.SetActive(false); 
          

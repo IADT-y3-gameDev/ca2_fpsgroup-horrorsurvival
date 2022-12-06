@@ -9,6 +9,9 @@ public class Teleportation : MonoBehaviour
 
     void OnTriggerEnter(Collider Other)
     {
-       thePlayer.transform.position = TeleEnd.transform.position; 
+        if (Other.transform.CompareTag("Player"))
+        {
+        thePlayer.transform.position = TeleEnd.transform.position; 
+        }
     }
 }

@@ -15,9 +15,9 @@ GameObject:
   - component: {fileID: 2186951425666620756}
   - component: {fileID: 2186951425666620757}
   - component: {fileID: 286706576452824866}
-  - component: {fileID: 9189131406630469212}
   - component: {fileID: 8519202777709195438}
   - component: {fileID: 877756915743976603}
+  - component: {fileID: -5341771424155942198}
   m_Layer: 0
   m_Name: Animated_mutant
   m_TagString: Untagged
@@ -155,18 +155,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &9189131406630469212
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2186951425666620754}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2f44e35bac88484081369f95470b0dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &8519202777709195438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,6 +177,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1bce662d7933bad42b286e85f86a4d85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+--- !u!114 &-5341771424155942198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2186951425666620754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59de3707914cb004cab11ecd0e4131f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &3838550925429763533
